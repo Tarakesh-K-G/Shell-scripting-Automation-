@@ -4,7 +4,7 @@ fastq_file="/home/tarak/Genome_Analysis"
 Trim_file="/home/tarak/Genome_Analysis/tri"
 
 for file in $fastq_file/*.fastq;do
-    base=$(basename "$file" .fastq)
+    base=$(basename "$file")
     echo -e "\n Running $file"
     trimmomatic SE \
      $file \
